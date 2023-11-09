@@ -1,0 +1,177 @@
+
+    .text_hover_animaiton {
+        line-height: 20px;
+      }
+        .text_hover_animaiton:hover {
+            --y: -10px;
+        }
+        
+        .text_hover_animaiton:hover .menu-text div {
+            --m: calc(20px * -1);
+        }
+      
+      .hover_black .menu-text {
+        text-shadow: 0 20px 0 black;
+      }
+      
+      .menu-text {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        overflow: hidden;
+        text-shadow: 0 20px 0 #3DD8A7;
+        display: flex;
+      }
+      
+      .menu-text div {
+        display: block;
+        backface-visibility: hidden;
+        transition: -webkit-transform 0.4s ease;
+        transition: transform 0.4s ease;
+        transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+        transform: translateY(var(--m)) translateZ(0);
+      }
+      
+      .text_hover_animaiton:hover .menu-text div:nth-child(1) {
+        -webkit-transition-delay: 0.05s;
+        transition-delay: 0.05s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(2) {
+        -webkit-transition-delay: 0.1s;
+        transition-delay: 0.1s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(3) {
+        -webkit-transition-delay: 0.15s;
+        transition-delay: 0.15s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(4) {
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(5) {
+        -webkit-transition-delay: 0.25s;
+        transition-delay: 0.25s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(6) {
+        -webkit-transition-delay: 0.3s;
+        transition-delay: 0.3s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(7) {
+        -webkit-transition-delay: 0.35s;
+        transition-delay: 0.35s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(8) {
+        -webkit-transition-delay: 0.4s;
+        transition-delay: 0.4s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(9) {
+        -webkit-transition-delay: 0.45s;
+        transition-delay: 0.45s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(10) {
+        -webkit-transition-delay: 0.5s;
+        transition-delay: 0.5s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(11) {
+        -webkit-transition-delay: 0.55s;
+        transition-delay: 0.55s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(12) {
+        -webkit-transition-delay: 0.6s;
+        transition-delay: 0.6s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(13) {
+        -webkit-transition-delay: 0.7s;
+        transition-delay: 0.7s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(14) {
+        -webkit-transition-delay: 75s;
+        transition-delay: 0.75s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(15) {
+        -webkit-transition-delay: 0.8s;
+        transition-delay: 0.8s;
+      }
+      .text_hover_animaiton:hover .menu-text div:nth-child(16) {
+        -webkit-transition-delay: 0.85s;
+        transition-delay: 0.85s;
+      }
+      
+      .zyan_animation[data-animation-type="fadeIn"] {
+        opacity: 0.7;
+      }
+
+      .main_menu .navbar-nav .nav-item .nav-link {
+        color:white;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin: 0;
+        line-height: 12px;
+        transition: all linear 0.3s;
+        font-family: poppins;
+        letter-spacing: 1px;
+        padding: 32px 20px;
+      }
+
+      @keyframes left-swing {
+        0%{
+          rotate: 0deg;
+          
+        }
+        25%{
+          rotate: 30deg;
+        }
+        50%{
+          rotate: 0deg;
+        }
+        100%{
+          rotate: 0deg;
+        }
+      }
+      .cradle div:last-child{
+        animation: right-swing 2s linear 1s infinite;
+        transform-origin: top left;
+      }
+
+      @keyframes right-swing {
+        0%{
+          rotate: 0deg;
+          
+        }
+        25%{
+          rotate: -30deg;
+        }
+        50%{
+          rotate: 0deg;
+        }
+        100%{
+          rotate: 0deg;
+        }
+      }
+
+      .habib{
+        color: white;
+        /* text-transform: uppercase; */
+        position: relative;
+        
+      }
+      .habib::before{
+        content: "Habib!";
+        color: #55e6a5;
+        position: absolute;
+        
+       border-right: 3px solid #55e6a5;
+        animation: swing 2s linear infinite;
+        overflow: hidden;
+      }
+      @keyframes swing {
+        0%{
+          width: 0%;
+        }
+        50%{
+          width:12rem;
+        }
+        100%{
+          width: 0%;
+        }
+      }
