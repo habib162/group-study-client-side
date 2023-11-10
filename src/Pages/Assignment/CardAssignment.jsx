@@ -23,7 +23,6 @@ const CardAssignment = ({ assignment }) => {
                 <motion.p>Mark: {assignment.mark}</motion.p>
                 <div className="card-actions">
                     <Link to={`/show-assignment/${assignment._id}`}><motion.button className="btn btn-success btn-sm text-white" >View Assignment</motion.button></Link>
-                    <motion.button className="btn btn-success btn-sm">View Assignment</motion.button>
                 </div>
             </div>
         </motion.div>
