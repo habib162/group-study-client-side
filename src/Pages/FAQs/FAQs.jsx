@@ -58,7 +58,7 @@ const FAQs = () => {
             <div className="flex flex-1 mx-auto font-poppins" >
                 <div className="">
                     {currentFaqs.map((faq, index) => (
-                        <div className="collapse collapse-plus w-[600px] bg-base-100 my-4 shadow-md rounded-md" data-aos="fade-right" key={index}>
+                        <div className="collapse collapse-plus w-[550px] bg-base-100 my-4 shadow-md rounded-md" data-aos="fade-right" key={index}>
                             <input type="radio" name="my-accordion" defaultChecked={index === 0 ? 'checked' : ''} />
                             <div className="collapse-title text-xl font-medium">
                                 {faq.question}
